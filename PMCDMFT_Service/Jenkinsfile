@@ -1,0 +1,8 @@
+node{
+stage('SCM Checkout'){
+    git'https://github.com/pmcproject/PMCDMFT'
+}
+stage('Compile-Pakeage'){
+sh 'mva package'
+}
+}
